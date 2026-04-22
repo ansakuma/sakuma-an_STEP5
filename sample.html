@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ステップ４テスト</title>
+  
+</head>
+
+<body>
+  
+    <div>
+        <h2>設問１：入力と表示</h2>
+            <input type="text" id="input">
+            <button id="button">表示</button>
+            <p id="output"></p>
+            
+    </div>
+    <div>
+        <h2>設問2：背景色の変更</h2>
+            <button id="background-color">背景色を変更</button>
+            <p id="background-output">「背景色を変更」ボタンをクリックすると背景色が変わります。</p>
+
+    </div>
+    <div>
+        <h2>設問３：ハイライトの切り替え</h2>
+        <button id="highlight-button">表示</button>
+        <p id="highlight-output">
+            <span id="highlight-text">「表示」ボタンをクリックするとハイライトが切り替わります。</span>
+        </p>
+    </div>
+    <div>
+        <h2>設問４：テーブルへの追加</h2>
+        <input type="text" id="table-input">
+        <button id="table-add-button">表示</button> 
+        <p></p>    
+        <table border="1">
+           
+            <tr>
+                <th>追加されたテキスト内容</th>
+                <th>　　</th>
+            </tr>
+             
+              <tbody id="table-body"></tbody>
+            </table>
+    </div>
+    <div>
+        <h2>設問５：削除機能</h2>
+        <input type="text" id="table5-input">
+        <button id="table5-add-button">表示</button>
+        <p></p>
+        <table border="1">
+            <tr>
+                <th>追加されたテキスト内容</th>
+                <th>　　</th>
+            </tr>
+              
+              <tbody id="table5-body"></tbody>
+        </table>
+          
+            
+
+    </div>
+
+    <div>
+    
+        <h2>設問６：テストデータ制限</h2>
+        <input type="text" id="limit6-input">
+        <button id="limit6-button">表示</button>
+        <p></p>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>テキストデータ</th>
+            </tr>
+            </thead>
+            <tbody id="limit6-body"></tbody>
+        </table>
+    </div>
+        <h2>設問７：ループ表示</h2>
+  </div>
+  <script src="sample.js"></script>
+</body>
+</html>
