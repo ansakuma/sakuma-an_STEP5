@@ -6,40 +6,34 @@ const output = document.getElementById('output');
 button.addEventListener('click', function() {
     // テキストボックスの内容を取得
     const text = input.value;
-    // 取得した内容をp要素に表示
     if (text === "") {
-        output.textContent = "入力値が空です。";
-    } else {
+        alert("入力値が空です。");
+        return;
+    } 
         output.textContent = text;
-    }
 });
 
 
 //　設問２
 const bgButton = document.getElementById('background-color');
-const bgOutput = document.getElementById('background-output');
 
 bgButton.addEventListener('click', function () {
-    const current = bgOutput.style.backgroundColor;
+    const current = document.body.style.backgroundColor;
     if (current === 'lightblue') {
-        bgOutput.style.backgroundColor = 'lightgreen';
+        document.body.style.backgroundColor = 'lightgreen';
     } else if (current === 'lightgreen') {
-        bgOutput.style.backgroundColor = 'lightcoral';
+        document.body.style.backgroundColor = 'lightcoral';
     } else {
-        bgOutput.style.backgroundColor = 'lightblue';
+        document.body.style.backgroundColor = 'lightblue';
     }
 });
+
 // 設問3
 const highlightBtn = document.getElementById('highlight-button');
 const outputArea = document.getElementById('highlight-text');
 
-highlightBtn.addEventListener('click', function() {
-    // 背景色のON/OFFを切り替える
-    if (outputArea.style.backgroundColor === 'yellow') {
-        outputArea.style.backgroundColor = '';
-    } else {
-        outputArea.style.backgroundColor = 'yellow';
-    }
+highlightBtn.addEventListener('click', function () {
+    outputArea.classList.toggle('highlight');
 });
 
 
